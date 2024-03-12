@@ -1,0 +1,627 @@
+2024-03-11:20:13:09 INFO [auto_label.py:346] 2024-03-11 20:13:09
+2024-03-11:20:13:09 INFO [auto_label.py:347] TTS-AutoLabel version: 1.1.8
+2024-03-11:20:13:09 INFO [auto_label.py:348] TTS-AutoLabel resource path: /mnt/workspace/.cache/modelscope/damo/speech_ptts_autolabel_16k/model
+2024-03-11:20:13:09 INFO [auto_label.py:349] Target sampling rate: 16000
+2024-03-11:20:13:09 INFO [auto_label.py:350] Input wav dir: /mnt/workspace/test_female
+2024-03-11:20:13:09 INFO [auto_label.py:351] Output data dir: /mnt/workspace/output_training_data
+2024-03-11:20:13:09 INFO [auto_label.py:421] wav_preprocess start...
+2024-03-11:20:13:09 INFO [resample_16.py:29] ---  new folder...  ---
+2024-03-11:20:13:09 INFO [resample_16.py:30] ---  OK  ---
+2024-03-11:20:13:09 INFO [auto_label.py:852] [VAD] chunk recordings for training.
+2024-03-11:20:13:09 INFO [auto_label.py:433] wav cut by vad start...
+2024-03-11:20:13:10 INFO [vad.py:71] wav SSB00180325_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180503_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180402_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180288_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180279_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180500_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180415_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180216_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180007_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180431_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180138_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180218_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180277_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180012_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180032_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180249_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180117_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180156_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180047_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [vad.py:71] wav SSB00180357_S0000 is no need to cut
+2024-03-11:20:13:11 INFO [resample_16.py:29] ---  new folder...  ---
+2024-03-11:20:13:11 INFO [resample_16.py:30] ---  OK  ---
+2024-03-11:20:13:25 INFO [audio2prosody.py:47] Text to label start...
+2024-03-11:20:13:28 INFO [auto_label.py:867] pre-break recording in paragraph by vad.
+2024-03-11:20:13:28 INFO [auto_label.py:872] Generate phone interval by fa align.
+2024-03-11:20:13:28 INFO [auto_label.py:471] prosody_dir=/mnt/workspace/output_training_data/paragraph/prosody
+2024-03-11:20:13:28 INFO [auto_label.py:511] FA processing...
+2024-03-11:20:13:28 INFO [auto_label.py:89] ---  New folder /mnt/workspace/output_training_data/raw_ali...  ---
+2024-03-11:20:13:28 INFO [auto_label.py:90] ---  OK  ---
+2024-03-11:20:13:28 INFO [auto_label.py:89] ---  New folder /mnt/workspace/output_training_data/raw_interval...  ---
+2024-03-11:20:13:28 INFO [auto_label.py:90] ---  OK  ---
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180012_S0000.wav, text: 我 怎么 会 和你 扯上 关系 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180288_S0000.wav, text: 我就 帮你 逃命 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180277_S0000.wav, text: 我会 万分 谨慎的 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180216_S0000.wav, text: 你 真的 不想 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180218_S0000.wav, text: 一三 六八一五七三八 七四 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180047_S0000.wav, text: 搜一搜 游子吟 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180279_S0000.wav, text: 花竹 植物 有 什么 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180325_S0000.wav, text: 但是 他 肯定 还 参与了 不少 其他事 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180032_S0000.wav, text: 在 圣诞节 上映 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180402_S0000.wav, text: 九坊 威龙 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180500_S0000.wav, text: 那 小女主 真是 太 感谢 你了 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180357_S0000.wav, text: 诺基亚 电器 有 什么 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180415_S0000.wav, text: 一三 零八七九四七 八 八三 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180249_S0000.wav, text: 没有 具体 数据 只说 一个 总数 是 远远 不够的 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180156_S0000.wav, text: 说一说 我 想要 这样 生活 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180503_S0000.wav, text: 九华一画 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180117_S0000.wav, text: 六十 千克 新人 王之 格栈 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180007_S0000.wav, text: 让 大家 快点 下来 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180431_S0000.wav, text: 搜一搜 生来 彷徨 
+2024-03-11:20:13:28 INFO [fa_utils.py:49] wav: /mnt/workspace/output_training_data/wav_cut_16k/SSB00180138_S0000.wav, text: 带点 蛋糕 或者 点心 回来 
+2024-03-11:20:13:28 INFO [align2interval.py:35] ---  There is this folder!  ---
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180218_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180402_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180007_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180431_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180032_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180047_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180279_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180138_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180216_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180357_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180415_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180156_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180012_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180249_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180503_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180325_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180500_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180117_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180277_S0000.ali
+2024-03-11:20:13:28 INFO [align2interval.py:159] SSB00180288_S0000.ali
+2024-03-11:20:13:28 INFO [auto_label.py:89] ---  New folder /mnt/workspace/output_training_data/ali...  ---
+2024-03-11:20:13:28 INFO [auto_label.py:90] ---  OK  ---
+2024-03-11:20:13:28 INFO [auto_label.py:89] ---  New folder /mnt/workspace/output_training_data/coarse_interval...  ---
+2024-03-11:20:13:28 INFO [auto_label.py:90] ---  OK  ---
+2024-03-11:20:13:28 INFO [auto_label.py:527] Trim silence wav with align info and modify wav files....
+2024-03-11:20:13:30 INFO [auto_label.py:529] Convert align info to interval files....
+2024-03-11:20:13:30 INFO [align2interval.py:35] ---  There is this folder!  ---
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180218_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180402_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180007_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180431_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180032_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180047_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180279_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180138_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180216_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180357_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180415_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180156_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180012_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180249_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180503_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180325_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180500_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180117_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180277_S0000.ali
+2024-03-11:20:13:30 INFO [align2interval.py:159] SSB00180288_S0000.ali
+2024-03-11:20:13:30 INFO [auto_label.py:916] qualification review.
+2024-03-11:20:13:30 INFO [auto_label.py:924] prosody sillence detect.
+2024-03-11:20:13:30 INFO [auto_label.py:89] ---  New folder /mnt/workspace/output_training_data/prosody...  ---
+2024-03-11:20:13:30 INFO [auto_label.py:90] ---  OK  ---
+2024-03-11:20:13:30 INFO [modify_pp_by_align_sil.py:610] Write prosody file
+2024-03-11:20:13:30 INFO [modify_pp_by_align_sil.py:628] 0 "mismatch" sentences
+
+2024-03-11:20:13:30 INFO [decrease_sp_amp.py:10] Trim sp started
+2024-03-11:20:13:30 INFO [decrease_sp_amp.py:33] Trim sp finished
+2024-03-11:20:13:30 INFO [auto_label.py:795] Auto labeling info: stage 1 | develop mode 0 | gender:female | score 10.000000 | retcode 0
+2024-03-11:20:13:30 INFO [auto_label.py:731] labeling report:
+2024-03-11:20:13:30 INFO [auto_label.py:732] stage 1 | develop mode 0 | gender female | score 10.000000 | retcode 0
+2024-03-11:20:13:30 INFO [auto_label.py:742] qulification report:
+2024-03-11:20:13:30 INFO [auto_label.py:743] credit score: 10.000000
+2024-03-11:20:13:30 INFO [auto_label.py:744] qualified score: 3.000000
+2024-03-11:20:13:30 INFO [auto_label.py:745] normalized snr: 35.000000
+2024-03-11:20:13:30 INFO [auto_label.py:746] abandon utt snr threshold: 10.000000
+2024-03-11:20:13:30 INFO [auto_label.py:747] snr score ration: 0.500000
+2024-03-11:20:13:30 INFO [auto_label.py:748] interval score ration: 0.500000
+2024-03-11:20:13:30 INFO [auto_label.py:749] data qulificaion report:
+2024-03-11:20:13:55 INFO [config.py:58] PyTorch version 2.1.2+cu121 available.
+2024-03-11:20:13:55 INFO [config.py:95] TensorFlow version 2.14.0 available.
+2024-03-11:20:14:18 INFO [font_manager.py:1443] generated new fontManager
+2024-03-11:20:14:46 INFO [TextScriptConvertor.py:495] TextScriptConvertor.process:
+Save script to: ./pretrain_work_dir/data/Script.xml
+2024-03-11:20:14:46 INFO [TextScriptConvertor.py:514] TextScriptConvertor.process:
+Save metafile to: ./pretrain_work_dir/data/raw_metafile.txt
+2024-03-11:20:14:46 INFO [audio_processor.py:90] [AudioProcessor] Initialize AudioProcessor.
+2024-03-11:20:14:46 INFO [audio_processor.py:91] [AudioProcessor] config params:
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] wav_normalize: True
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] trim_silence: True
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] trim_silence_threshold_db: 60
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] preemphasize: False
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] sampling_rate: 16000
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] hop_length: 200
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] win_length: 1000
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] n_fft: 2048
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] n_mels: 80
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] fmin: 0.0
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] fmax: 8000.0
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] phone_level_feature: True
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] se_feature: True
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] norm_type: mean_std
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] max_norm: 1.0
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] symmetric: False
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] min_level_db: -100.0
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] ref_level_db: 20
+2024-03-11:20:14:46 INFO [audio_processor.py:93] [AudioProcessor] num_workers: 16
+2024-03-11:20:14:46 INFO [audio_processor.py:201] [AudioProcessor] Amplitude normalization started
+2024-03-11:20:14:46 INFO [utils.py:184] Volume statistic proceeding...
+2024-03-11:20:14:47 INFO [utils.py:168] Average amplitude RMS : 0.03495915000000001
+2024-03-11:20:14:47 INFO [utils.py:186] Volume statistic done.
+2024-03-11:20:14:47 INFO [utils.py:194] Volume normalization proceeding...
+2024-03-11:20:14:47 INFO [utils.py:221] Volume normalization done.
+2024-03-11:20:14:47 INFO [audio_processor.py:204] [AudioProcessor] Amplitude normalization finished
+2024-03-11:20:14:47 INFO [audio_processor.py:394] [AudioProcessor] Duration generation started
+2024-03-11:20:14:47 INFO [audio_processor.py:411] [AudioProcessor] Duration align with mel is proceeding...
+2024-03-11:20:14:47 INFO [audio_processor.py:453] [AudioProcessor] Duration generate finished
+2024-03-11:20:14:47 INFO [audio_processor.py:278] [AudioProcessor] Trim silence with interval started
+2024-03-11:20:14:47 INFO [audio_processor.py:216] [AudioProcessor] Start to load pcm from ./pretrain_work_dir/data/wav
+2024-03-11:20:14:48 INFO [audio_processor.py:314] [AudioProcessor] Trim silence finished
+2024-03-11:20:14:48 INFO [audio_processor.py:322] [AudioProcessor] Melspec extraction started
+2024-03-11:20:14:48 INFO [audio_processor.py:361] [AudioProcessor] Melspec extraction finished
+2024-03-11:20:14:48 INFO [audio_processor.py:365] Melspec statistic proceeding...
+2024-03-11:20:14:48 INFO [audio_processor.py:368] Melspec statistic done
+2024-03-11:20:14:48 INFO [audio_processor.py:371] [AudioProcessor] melspec mean and std saved to:
+./pretrain_work_dir/data/mel/mel_mean.txt,
+./pretrain_work_dir/data/mel/mel_std.txt
+2024-03-11:20:14:48 INFO [audio_processor.py:378] [AudioProcessor] Melspec mean std norm is proceeding...
+2024-03-11:20:14:48 INFO [audio_processor.py:384] [AudioProcessor] Melspec normalization finished
+2024-03-11:20:14:48 INFO [audio_processor.py:385] [AudioProcessor] Normed Melspec saved to ./pretrain_work_dir/data/mel
+2024-03-11:20:14:48 INFO [audio_processor.py:467] [AudioProcessor] Pitch extraction started
+2024-03-11:20:14:49 INFO [audio_processor.py:483] [AudioProcessor] Pitch align with mel is proceeding...
+2024-03-11:20:14:49 INFO [audio_processor.py:510] [AudioProcessor] Pitch normalization is proceeding...
+2024-03-11:20:14:49 INFO [audio_processor.py:515] [AudioProcessor] f0 mean and std saved to:
+./pretrain_work_dir/data/f0/f0_mean.txt,
+./pretrain_work_dir/data/f0/f0_std.txt
+2024-03-11:20:14:49 INFO [audio_processor.py:521] [AudioProcessor] Pitch mean std norm is proceeding...
+2024-03-11:20:14:49 INFO [audio_processor.py:548] [AudioProcessor] Pitch turn to phone-level is proceeding...
+2024-03-11:20:14:49 INFO [audio_processor.py:580] [AudioProcessor] Pitch normalization finished
+2024-03-11:20:14:49 INFO [audio_processor.py:581] [AudioProcessor] Normed f0 saved to ./pretrain_work_dir/data/f0
+2024-03-11:20:14:49 INFO [audio_processor.py:582] [AudioProcessor] Pitch extraction finished
+2024-03-11:20:14:49 INFO [audio_processor.py:593] [AudioProcessor] Energy extraction started
+2024-03-11:20:14:50 INFO [audio_processor.py:635] [AudioProcessor] energy mean and std saved to:
+./pretrain_work_dir/data/energy/energy_mean.txt,
+./pretrain_work_dir/data/energy/energy_std.txt
+2024-03-11:20:14:50 INFO [audio_processor.py:642] [AudioProcessor] Energy mean std norm is proceeding...
+2024-03-11:20:14:50 INFO [audio_processor.py:690] [AudioProcessor] Energy normalization finished
+2024-03-11:20:14:50 INFO [audio_processor.py:691] [AudioProcessor] Normed Energy saved to ./pretrain_work_dir/data/energy
+2024-03-11:20:14:50 INFO [audio_processor.py:692] [AudioProcessor] Energy extraction finished
+2024-03-11:20:14:50 INFO [audio_processor.py:774] [AudioProcessor] All features extracted successfully!
+2024-03-11:20:14:50 INFO [data_process.py:198] Processing audio done.
+2024-03-11:20:14:50 INFO [se_processor.py:30] [SpeakerEmbeddingProcessor] Speaker embedding extractor started
+2024-03-11:20:14:50 INFO [se_processor.py:43] [SpeakerEmbeddingProcessor] se model loading error!!!
+2024-03-11:20:14:50 INFO [se_processor.py:45] [SpeakerEmbeddingProcessor] please update your se model to ensure that the version is greater than or equal to 1.0.5
+2024-03-11:20:14:50 INFO [se_processor.py:49] [SpeakerEmbeddingProcessor] try load it as se.model
+2024-03-11:20:15:09 INFO [se_processor.py:93] [SpeakerEmbeddingProcessor] Speaker embedding extracted successfully!
+2024-03-11:20:15:09 INFO [data_process.py:207] Processing speaker embedding done.
+2024-03-11:20:15:09 INFO [data_process.py:209] Processing done.
+2024-03-11:20:15:09 INFO [data_process.py:53] Voc metafile generated.
+2024-03-11:20:15:09 INFO [data_process.py:67] AM metafile generated.
+2024-03-11:20:15:09 INFO [dataset.py:573] Loading metafile...
+2024-03-11:20:15:09 INFO [dataset.py:573] Loading metafile...
+2024-03-11:20:15:13 INFO [trainer.py:177] Checkpoint saved at step 2400000
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/TotalLoss = 0.0295.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/mel_loss_ = 0.0096.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/mel_loss = 0.0084.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/dur_loss = 0.0032.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/pitch_loss = 0.0023.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/energy_loss = 0.0060.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/batch_size = 0.3800.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/x_band_width = 0.4000.
+2024-03-11:20:15:13 INFO [trainer.py:183] (Steps: 2400000) train/h_band_width = 0.4000.
+2024-03-11:20:15:13 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:15:13 INFO [trainer.py:231] Epoch 0 finished
+2024-03-11:20:15:13 INFO [trainer.py:231] Epoch 1 finished
+2024-03-11:20:15:14 INFO [trainer.py:231] Epoch 2 finished
+2024-03-11:20:15:15 INFO [trainer.py:231] Epoch 3 finished
+2024-03-11:20:15:15 INFO [trainer.py:231] Epoch 4 finished
+2024-03-11:20:15:16 INFO [trainer.py:231] Epoch 5 finished
+2024-03-11:20:15:17 INFO [trainer.py:231] Epoch 6 finished
+2024-03-11:20:15:18 INFO [trainer.py:231] Epoch 7 finished
+2024-03-11:20:15:18 INFO [trainer.py:231] Epoch 8 finished
+2024-03-11:20:15:19 INFO [trainer.py:231] Epoch 9 finished
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/TotalLoss = 0.2768.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/mel_loss_ = 0.0900.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/mel_loss = 0.0749.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/dur_loss = 0.0304.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/pitch_loss = 0.0228.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/energy_loss = 0.0586.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/batch_size = 3.8000.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/x_band_width = 4.0000.
+2024-03-11:20:15:20 INFO [trainer.py:183] (Steps: 2400010) train/h_band_width = 4.0000.
+2024-03-11:20:15:20 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:15:20 INFO [trainer.py:231] Epoch 10 finished
+2024-03-11:20:15:20 INFO [trainer.py:231] Epoch 11 finished
+2024-03-11:20:15:21 INFO [trainer.py:231] Epoch 12 finished
+2024-03-11:20:15:22 INFO [trainer.py:231] Epoch 13 finished
+2024-03-11:20:15:23 INFO [trainer.py:231] Epoch 14 finished
+2024-03-11:20:15:23 INFO [trainer.py:231] Epoch 15 finished
+2024-03-11:20:15:24 INFO [trainer.py:231] Epoch 16 finished
+2024-03-11:20:15:25 INFO [trainer.py:231] Epoch 17 finished
+2024-03-11:20:15:26 INFO [trainer.py:231] Epoch 18 finished
+2024-03-11:20:15:26 INFO [trainer.py:231] Epoch 19 finished
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/TotalLoss = 0.2519.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/mel_loss_ = 0.0826.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/mel_loss = 0.0661.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/dur_loss = 0.0269.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/pitch_loss = 0.0204.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/energy_loss = 0.0559.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/batch_size = 3.8000.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/x_band_width = 4.0000.
+2024-03-11:20:15:27 INFO [trainer.py:183] (Steps: 2400020) train/h_band_width = 4.0000.
+2024-03-11:20:15:27 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:15:27 INFO [trainer.py:231] Epoch 20 finished
+2024-03-11:20:15:28 INFO [trainer.py:231] Epoch 21 finished
+2024-03-11:20:15:28 INFO [trainer.py:231] Epoch 22 finished
+2024-03-11:20:15:29 INFO [trainer.py:231] Epoch 23 finished
+2024-03-11:20:15:30 INFO [trainer.py:231] Epoch 24 finished
+2024-03-11:20:15:30 INFO [trainer.py:231] Epoch 25 finished
+2024-03-11:20:15:31 INFO [trainer.py:231] Epoch 26 finished
+2024-03-11:20:15:32 INFO [trainer.py:231] Epoch 27 finished
+2024-03-11:20:15:33 INFO [trainer.py:231] Epoch 28 finished
+2024-03-11:20:15:33 INFO [trainer.py:231] Epoch 29 finished
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/TotalLoss = 0.2349.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/mel_loss_ = 0.0778.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/mel_loss = 0.0614.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/dur_loss = 0.0244.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/pitch_loss = 0.0188.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/energy_loss = 0.0525.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/batch_size = 3.8000.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/x_band_width = 4.0000.
+2024-03-11:20:15:34 INFO [trainer.py:183] (Steps: 2400030) train/h_band_width = 4.0000.
+2024-03-11:20:15:34 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:15:34 INFO [trainer.py:231] Epoch 30 finished
+2024-03-11:20:15:35 INFO [trainer.py:231] Epoch 31 finished
+2024-03-11:20:15:35 INFO [trainer.py:231] Epoch 32 finished
+2024-03-11:20:15:36 INFO [trainer.py:231] Epoch 33 finished
+2024-03-11:20:15:37 INFO [trainer.py:231] Epoch 34 finished
+2024-03-11:20:15:37 INFO [trainer.py:231] Epoch 35 finished
+2024-03-11:20:15:38 INFO [trainer.py:231] Epoch 36 finished
+2024-03-11:20:15:39 INFO [trainer.py:231] Epoch 37 finished
+2024-03-11:20:15:39 INFO [trainer.py:231] Epoch 38 finished
+2024-03-11:20:15:40 INFO [trainer.py:231] Epoch 39 finished
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/TotalLoss = 0.2252.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/mel_loss_ = 0.0758.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/mel_loss = 0.0590.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/dur_loss = 0.0219.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/pitch_loss = 0.0178.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/energy_loss = 0.0506.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/batch_size = 3.8000.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/x_band_width = 4.0000.
+2024-03-11:20:15:41 INFO [trainer.py:183] (Steps: 2400040) train/h_band_width = 4.0000.
+2024-03-11:20:15:41 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:15:41 INFO [trainer.py:231] Epoch 40 finished
+2024-03-11:20:15:42 INFO [trainer.py:231] Epoch 41 finished
+2024-03-11:20:15:42 INFO [trainer.py:231] Epoch 42 finished
+2024-03-11:20:15:43 INFO [trainer.py:231] Epoch 43 finished
+2024-03-11:20:15:44 INFO [trainer.py:231] Epoch 44 finished
+2024-03-11:20:15:44 INFO [trainer.py:231] Epoch 45 finished
+2024-03-11:20:15:45 INFO [trainer.py:231] Epoch 46 finished
+2024-03-11:20:15:46 INFO [trainer.py:231] Epoch 47 finished
+2024-03-11:20:15:47 INFO [trainer.py:231] Epoch 48 finished
+2024-03-11:20:15:47 INFO [trainer.py:231] Epoch 49 finished
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/TotalLoss = 0.2155.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/mel_loss_ = 0.0732.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/mel_loss = 0.0566.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/dur_loss = 0.0200.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/pitch_loss = 0.0173.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/energy_loss = 0.0484.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/batch_size = 3.8000.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/x_band_width = 4.0000.
+2024-03-11:20:15:48 INFO [trainer.py:183] (Steps: 2400050) train/h_band_width = 4.0000.
+2024-03-11:20:15:48 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:15:48 INFO [trainer.py:231] Epoch 50 finished
+2024-03-11:20:15:49 INFO [trainer.py:231] Epoch 51 finished
+2024-03-11:20:15:49 INFO [trainer.py:231] Epoch 52 finished
+2024-03-11:20:15:50 INFO [trainer.py:231] Epoch 53 finished
+2024-03-11:20:15:51 INFO [trainer.py:231] Epoch 54 finished
+2024-03-11:20:15:52 INFO [trainer.py:231] Epoch 55 finished
+2024-03-11:20:15:52 INFO [trainer.py:231] Epoch 56 finished
+2024-03-11:20:15:53 INFO [trainer.py:231] Epoch 57 finished
+2024-03-11:20:15:54 INFO [trainer.py:231] Epoch 58 finished
+2024-03-11:20:15:54 INFO [trainer.py:231] Epoch 59 finished
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/TotalLoss = 0.2082.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/mel_loss_ = 0.0720.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/mel_loss = 0.0551.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/dur_loss = 0.0185.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/pitch_loss = 0.0162.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/energy_loss = 0.0464.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/batch_size = 3.8000.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/x_band_width = 4.0000.
+2024-03-11:20:15:55 INFO [trainer.py:183] (Steps: 2400060) train/h_band_width = 4.0000.
+2024-03-11:20:15:55 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:15:55 INFO [trainer.py:231] Epoch 60 finished
+2024-03-11:20:15:56 INFO [trainer.py:231] Epoch 61 finished
+2024-03-11:20:15:57 INFO [trainer.py:231] Epoch 62 finished
+2024-03-11:20:15:57 INFO [trainer.py:231] Epoch 63 finished
+2024-03-11:20:15:58 INFO [trainer.py:231] Epoch 64 finished
+2024-03-11:20:15:59 INFO [trainer.py:231] Epoch 65 finished
+2024-03-11:20:15:59 INFO [trainer.py:231] Epoch 66 finished
+2024-03-11:20:16:00 INFO [trainer.py:231] Epoch 67 finished
+2024-03-11:20:16:01 INFO [trainer.py:231] Epoch 68 finished
+2024-03-11:20:16:01 INFO [trainer.py:231] Epoch 69 finished
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/TotalLoss = 0.2020.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/mel_loss_ = 0.0705.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/mel_loss = 0.0541.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/dur_loss = 0.0170.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/pitch_loss = 0.0153.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/energy_loss = 0.0450.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/batch_size = 3.8000.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/x_band_width = 4.0000.
+2024-03-11:20:16:02 INFO [trainer.py:183] (Steps: 2400070) train/h_band_width = 4.0000.
+2024-03-11:20:16:02 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:02 INFO [trainer.py:231] Epoch 70 finished
+2024-03-11:20:16:03 INFO [trainer.py:231] Epoch 71 finished
+2024-03-11:20:16:04 INFO [trainer.py:231] Epoch 72 finished
+2024-03-11:20:16:04 INFO [trainer.py:231] Epoch 73 finished
+2024-03-11:20:16:05 INFO [trainer.py:231] Epoch 74 finished
+2024-03-11:20:16:06 INFO [trainer.py:231] Epoch 75 finished
+2024-03-11:20:16:06 INFO [trainer.py:231] Epoch 76 finished
+2024-03-11:20:16:07 INFO [trainer.py:231] Epoch 77 finished
+2024-03-11:20:16:08 INFO [trainer.py:231] Epoch 78 finished
+2024-03-11:20:16:08 INFO [trainer.py:231] Epoch 79 finished
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/TotalLoss = 0.1962.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/mel_loss_ = 0.0694.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/mel_loss = 0.0528.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/dur_loss = 0.0157.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/pitch_loss = 0.0151.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/energy_loss = 0.0432.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/batch_size = 3.8000.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/x_band_width = 4.0000.
+2024-03-11:20:16:09 INFO [trainer.py:183] (Steps: 2400080) train/h_band_width = 4.0000.
+2024-03-11:20:16:09 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:09 INFO [trainer.py:231] Epoch 80 finished
+2024-03-11:20:16:10 INFO [trainer.py:231] Epoch 81 finished
+2024-03-11:20:16:11 INFO [trainer.py:231] Epoch 82 finished
+2024-03-11:20:16:11 INFO [trainer.py:231] Epoch 83 finished
+2024-03-11:20:16:12 INFO [trainer.py:231] Epoch 84 finished
+2024-03-11:20:16:13 INFO [trainer.py:231] Epoch 85 finished
+2024-03-11:20:16:14 INFO [trainer.py:231] Epoch 86 finished
+2024-03-11:20:16:14 INFO [trainer.py:231] Epoch 87 finished
+2024-03-11:20:16:15 INFO [trainer.py:231] Epoch 88 finished
+2024-03-11:20:16:16 INFO [trainer.py:231] Epoch 89 finished
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/TotalLoss = 0.1913.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/mel_loss_ = 0.0683.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/mel_loss = 0.0519.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/dur_loss = 0.0147.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/pitch_loss = 0.0146.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/energy_loss = 0.0418.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/batch_size = 3.8000.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/x_band_width = 4.0000.
+2024-03-11:20:16:16 INFO [trainer.py:183] (Steps: 2400090) train/h_band_width = 4.0000.
+2024-03-11:20:16:16 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:16 INFO [trainer.py:231] Epoch 90 finished
+2024-03-11:20:16:17 INFO [trainer.py:231] Epoch 91 finished
+2024-03-11:20:16:18 INFO [trainer.py:231] Epoch 92 finished
+2024-03-11:20:16:18 INFO [trainer.py:231] Epoch 93 finished
+2024-03-11:20:16:19 INFO [trainer.py:231] Epoch 94 finished
+2024-03-11:20:16:20 INFO [trainer.py:231] Epoch 95 finished
+2024-03-11:20:16:21 INFO [trainer.py:231] Epoch 96 finished
+2024-03-11:20:16:21 INFO [trainer.py:231] Epoch 97 finished
+2024-03-11:20:16:22 INFO [trainer.py:231] Epoch 98 finished
+2024-03-11:20:16:23 INFO [trainer.py:231] Epoch 99 finished
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/TotalLoss = 0.1873.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/mel_loss_ = 0.0674.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/mel_loss = 0.0511.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/dur_loss = 0.0138.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/pitch_loss = 0.0140.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/energy_loss = 0.0408.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/batch_size = 3.8000.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/x_band_width = 4.0000.
+2024-03-11:20:16:23 INFO [trainer.py:183] (Steps: 2400100) train/h_band_width = 4.0000.
+2024-03-11:20:16:23 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:23 INFO [trainer.py:231] Epoch 100 finished
+2024-03-11:20:16:24 INFO [trainer.py:231] Epoch 101 finished
+2024-03-11:20:16:25 INFO [trainer.py:231] Epoch 102 finished
+2024-03-11:20:16:26 INFO [trainer.py:231] Epoch 103 finished
+2024-03-11:20:16:26 INFO [trainer.py:231] Epoch 104 finished
+2024-03-11:20:16:27 INFO [trainer.py:231] Epoch 105 finished
+2024-03-11:20:16:28 INFO [trainer.py:231] Epoch 106 finished
+2024-03-11:20:16:28 INFO [trainer.py:231] Epoch 107 finished
+2024-03-11:20:16:29 INFO [trainer.py:231] Epoch 108 finished
+2024-03-11:20:16:30 INFO [trainer.py:231] Epoch 109 finished
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/TotalLoss = 0.1832.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/mel_loss_ = 0.0664.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/mel_loss = 0.0502.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/dur_loss = 0.0128.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/pitch_loss = 0.0136.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/energy_loss = 0.0403.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/batch_size = 3.8000.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/x_band_width = 4.0000.
+2024-03-11:20:16:30 INFO [trainer.py:183] (Steps: 2400110) train/h_band_width = 4.0000.
+2024-03-11:20:16:30 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:31 INFO [trainer.py:231] Epoch 110 finished
+2024-03-11:20:16:31 INFO [trainer.py:231] Epoch 111 finished
+2024-03-11:20:16:32 INFO [trainer.py:231] Epoch 112 finished
+2024-03-11:20:16:33 INFO [trainer.py:231] Epoch 113 finished
+2024-03-11:20:16:33 INFO [trainer.py:231] Epoch 114 finished
+2024-03-11:20:16:34 INFO [trainer.py:231] Epoch 115 finished
+2024-03-11:20:16:35 INFO [trainer.py:231] Epoch 116 finished
+2024-03-11:20:16:36 INFO [trainer.py:231] Epoch 117 finished
+2024-03-11:20:16:36 INFO [trainer.py:231] Epoch 118 finished
+2024-03-11:20:16:37 INFO [trainer.py:231] Epoch 119 finished
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/TotalLoss = 0.1814.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/mel_loss_ = 0.0664.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/mel_loss = 0.0499.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/dur_loss = 0.0121.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/pitch_loss = 0.0134.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/energy_loss = 0.0396.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/batch_size = 3.8000.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/x_band_width = 4.0000.
+2024-03-11:20:16:37 INFO [trainer.py:183] (Steps: 2400120) train/h_band_width = 4.0000.
+2024-03-11:20:16:37 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:37 INFO [trainer.py:231] Epoch 120 finished
+2024-03-11:20:16:38 INFO [trainer.py:231] Epoch 121 finished
+2024-03-11:20:16:39 INFO [trainer.py:231] Epoch 122 finished
+2024-03-11:20:16:40 INFO [trainer.py:231] Epoch 123 finished
+2024-03-11:20:16:41 INFO [trainer.py:231] Epoch 124 finished
+2024-03-11:20:16:41 INFO [trainer.py:231] Epoch 125 finished
+2024-03-11:20:16:42 INFO [trainer.py:231] Epoch 126 finished
+2024-03-11:20:16:42 INFO [trainer.py:231] Epoch 127 finished
+2024-03-11:20:16:43 INFO [trainer.py:231] Epoch 128 finished
+2024-03-11:20:16:44 INFO [trainer.py:231] Epoch 129 finished
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/TotalLoss = 0.1764.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/mel_loss_ = 0.0651.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/mel_loss = 0.0492.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/dur_loss = 0.0116.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/pitch_loss = 0.0130.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/energy_loss = 0.0375.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/batch_size = 3.8000.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/x_band_width = 4.0000.
+2024-03-11:20:16:44 INFO [trainer.py:183] (Steps: 2400130) train/h_band_width = 4.0000.
+2024-03-11:20:16:44 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:45 INFO [trainer.py:231] Epoch 130 finished
+2024-03-11:20:16:45 INFO [trainer.py:231] Epoch 131 finished
+2024-03-11:20:16:46 INFO [trainer.py:231] Epoch 132 finished
+2024-03-11:20:16:47 INFO [trainer.py:231] Epoch 133 finished
+2024-03-11:20:16:47 INFO [trainer.py:231] Epoch 134 finished
+2024-03-11:20:16:48 INFO [trainer.py:231] Epoch 135 finished
+2024-03-11:20:16:49 INFO [trainer.py:231] Epoch 136 finished
+2024-03-11:20:16:50 INFO [trainer.py:231] Epoch 137 finished
+2024-03-11:20:16:50 INFO [trainer.py:231] Epoch 138 finished
+2024-03-11:20:16:51 INFO [trainer.py:231] Epoch 139 finished
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/TotalLoss = 0.1749.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/mel_loss_ = 0.0646.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/mel_loss = 0.0486.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/dur_loss = 0.0112.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/pitch_loss = 0.0127.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/energy_loss = 0.0378.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/batch_size = 3.8000.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/x_band_width = 4.0000.
+2024-03-11:20:16:51 INFO [trainer.py:183] (Steps: 2400140) train/h_band_width = 4.0000.
+2024-03-11:20:16:51 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:52 INFO [trainer.py:231] Epoch 140 finished
+2024-03-11:20:16:52 INFO [trainer.py:231] Epoch 141 finished
+2024-03-11:20:16:53 INFO [trainer.py:231] Epoch 142 finished
+2024-03-11:20:16:54 INFO [trainer.py:231] Epoch 143 finished
+2024-03-11:20:16:55 INFO [trainer.py:231] Epoch 144 finished
+2024-03-11:20:16:55 INFO [trainer.py:231] Epoch 145 finished
+2024-03-11:20:16:56 INFO [trainer.py:231] Epoch 146 finished
+2024-03-11:20:16:57 INFO [trainer.py:231] Epoch 147 finished
+2024-03-11:20:16:57 INFO [trainer.py:231] Epoch 148 finished
+2024-03-11:20:16:58 INFO [trainer.py:231] Epoch 149 finished
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/TotalLoss = 0.1721.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/mel_loss_ = 0.0642.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/mel_loss = 0.0484.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/dur_loss = 0.0107.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/pitch_loss = 0.0125.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/energy_loss = 0.0363.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/batch_size = 3.8000.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/x_band_width = 4.0000.
+2024-03-11:20:16:59 INFO [trainer.py:183] (Steps: 2400150) train/h_band_width = 4.0000.
+2024-03-11:20:16:59 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:16:59 INFO [trainer.py:231] Epoch 150 finished
+2024-03-11:20:17:00 INFO [trainer.py:231] Epoch 151 finished
+2024-03-11:20:17:00 INFO [trainer.py:231] Epoch 152 finished
+2024-03-11:20:17:01 INFO [trainer.py:231] Epoch 153 finished
+2024-03-11:20:17:02 INFO [trainer.py:231] Epoch 154 finished
+2024-03-11:20:17:02 INFO [trainer.py:231] Epoch 155 finished
+2024-03-11:20:17:03 INFO [trainer.py:231] Epoch 156 finished
+2024-03-11:20:17:04 INFO [trainer.py:231] Epoch 157 finished
+2024-03-11:20:17:05 INFO [trainer.py:231] Epoch 158 finished
+2024-03-11:20:17:05 INFO [trainer.py:231] Epoch 159 finished
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/TotalLoss = 0.1692.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/mel_loss_ = 0.0636.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/mel_loss = 0.0478.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/dur_loss = 0.0103.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/pitch_loss = 0.0120.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/energy_loss = 0.0355.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/batch_size = 3.8000.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/x_band_width = 4.0000.
+2024-03-11:20:17:06 INFO [trainer.py:183] (Steps: 2400160) train/h_band_width = 4.0000.
+2024-03-11:20:17:06 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:17:06 INFO [trainer.py:231] Epoch 160 finished
+2024-03-11:20:17:07 INFO [trainer.py:231] Epoch 161 finished
+2024-03-11:20:17:07 INFO [trainer.py:231] Epoch 162 finished
+2024-03-11:20:17:08 INFO [trainer.py:231] Epoch 163 finished
+2024-03-11:20:17:09 INFO [trainer.py:231] Epoch 164 finished
+2024-03-11:20:17:10 INFO [trainer.py:231] Epoch 165 finished
+2024-03-11:20:17:10 INFO [trainer.py:231] Epoch 166 finished
+2024-03-11:20:17:11 INFO [trainer.py:231] Epoch 167 finished
+2024-03-11:20:17:12 INFO [trainer.py:231] Epoch 168 finished
+2024-03-11:20:17:12 INFO [trainer.py:231] Epoch 169 finished
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/TotalLoss = 0.1667.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/mel_loss_ = 0.0625.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/mel_loss = 0.0470.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/dur_loss = 0.0098.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/pitch_loss = 0.0117.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/energy_loss = 0.0358.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/batch_size = 3.8000.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/x_band_width = 4.0000.
+2024-03-11:20:17:13 INFO [trainer.py:183] (Steps: 2400170) train/h_band_width = 4.0000.
+2024-03-11:20:17:13 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:17:13 INFO [trainer.py:231] Epoch 170 finished
+2024-03-11:20:17:14 INFO [trainer.py:231] Epoch 171 finished
+2024-03-11:20:17:14 INFO [trainer.py:231] Epoch 172 finished
+2024-03-11:20:17:15 INFO [trainer.py:231] Epoch 173 finished
+2024-03-11:20:17:16 INFO [trainer.py:231] Epoch 174 finished
+2024-03-11:20:17:16 INFO [trainer.py:231] Epoch 175 finished
+2024-03-11:20:17:17 INFO [trainer.py:231] Epoch 176 finished
+2024-03-11:20:17:18 INFO [trainer.py:231] Epoch 177 finished
+2024-03-11:20:17:19 INFO [trainer.py:231] Epoch 178 finished
+2024-03-11:20:17:19 INFO [trainer.py:231] Epoch 179 finished
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/TotalLoss = 0.1661.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/mel_loss_ = 0.0628.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/mel_loss = 0.0470.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/dur_loss = 0.0095.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/pitch_loss = 0.0116.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/energy_loss = 0.0351.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/batch_size = 3.8000.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/x_band_width = 4.0000.
+2024-03-11:20:17:20 INFO [trainer.py:183] (Steps: 2400180) train/h_band_width = 4.0000.
+2024-03-11:20:17:20 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:17:20 INFO [trainer.py:231] Epoch 180 finished
+2024-03-11:20:17:21 INFO [trainer.py:231] Epoch 181 finished
+2024-03-11:20:17:22 INFO [trainer.py:231] Epoch 182 finished
+2024-03-11:20:17:22 INFO [trainer.py:231] Epoch 183 finished
+2024-03-11:20:17:23 INFO [trainer.py:231] Epoch 184 finished
+2024-03-11:20:17:24 INFO [trainer.py:231] Epoch 185 finished
+2024-03-11:20:17:24 INFO [trainer.py:231] Epoch 186 finished
+2024-03-11:20:17:25 INFO [trainer.py:231] Epoch 187 finished
+2024-03-11:20:17:26 INFO [trainer.py:231] Epoch 188 finished
+2024-03-11:20:17:27 INFO [trainer.py:231] Epoch 189 finished
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/TotalLoss = 0.1630.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/mel_loss_ = 0.0620.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/mel_loss = 0.0465.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/dur_loss = 0.0092.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/pitch_loss = 0.0111.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/energy_loss = 0.0342.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/batch_size = 3.8000.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/x_band_width = 4.0000.
+2024-03-11:20:17:27 INFO [trainer.py:183] (Steps: 2400190) train/h_band_width = 4.0000.
+2024-03-11:20:17:27 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:17:27 INFO [trainer.py:231] Epoch 190 finished
+2024-03-11:20:17:28 INFO [trainer.py:231] Epoch 191 finished
+2024-03-11:20:17:29 INFO [trainer.py:231] Epoch 192 finished
+2024-03-11:20:17:29 INFO [trainer.py:231] Epoch 193 finished
+2024-03-11:20:17:30 INFO [trainer.py:231] Epoch 194 finished
+2024-03-11:20:17:31 INFO [trainer.py:231] Epoch 195 finished
+2024-03-11:20:17:32 INFO [trainer.py:231] Epoch 196 finished
+2024-03-11:20:17:32 INFO [trainer.py:231] Epoch 197 finished
+2024-03-11:20:17:33 INFO [trainer.py:231] Epoch 198 finished
+2024-03-11:20:17:34 INFO [trainer.py:231] Epoch 199 finished
+2024-03-11:20:17:35 INFO [trainer.py:177] Checkpoint saved at step 2400200
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/TotalLoss = 0.1603.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/mel_loss_ = 0.0610.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/mel_loss = 0.0459.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/dur_loss = 0.0090.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/pitch_loss = 0.0110.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/energy_loss = 0.0333.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/batch_size = 3.8000.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/x_band_width = 4.0000.
+2024-03-11:20:17:35 INFO [trainer.py:183] (Steps: 2400200) train/h_band_width = 4.0000.
+2024-03-11:20:17:35 INFO [trainer.py:190] KanTtsSAMBERT learning rate: 0.000082
+2024-03-11:20:17:35 INFO [trainer.py:231] Epoch 200 finished
+2024-03-11:20:17:35 INFO [trainer.py:231] Epoch 201 finished

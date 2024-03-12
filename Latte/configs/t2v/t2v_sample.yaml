@@ -1,0 +1,142 @@
+# path:
+ckpt: ./models/Latte/t2v.pt
+save_img_path: "./sample_videos9/t2v"
+pretrained_model_path: "./models/Latte/t2v_required_models"
+
+# model config: 
+model: LatteT2V
+video_length: 16
+image_size: [512, 512]
+# # beta schedule
+beta_start: 0.0001
+beta_end: 0.02
+# beta_end: 0.1
+beta_schedule: "linear"
+variance_type: "learned_range"
+
+# model speedup
+use_compile: False
+use_fp16: True
+
+# sample config:
+seed:
+run_time: 0
+guidance_scale: 7.5
+sample_method: 'PNDM'
+num_sampling_steps: 50
+enable_temporal_attentions: True
+enable_vae_temporal_decoder: False # use temporal vae decoder from SVD, maybe reduce the video flicker (It's not widely tested)
+
+text_prompt: [
+
+            # "黑白相间的猫咪站在路中间，自称是“斑马线的守护者”，橘色猫则耸耸肩，说它是过马路的“导盲犬”。",
+            # "小黑白得意地宣布它将开一家“猫咖啡馆”，地点选在橘猫的“领土”上，橘猫反击说它就喜欢在竞争中找乐子。",
+            # "橘色小猫自称是“领地规划师”，指挥着一群小鸽子重新划分空中的领空。",
+            # "小黑白提出要进行一场“喵式辩论”，声称自己会用最锋利的逻辑“挠败”对方。",
+            # "橘色小猫摆出一副学者样，但却拿着一本倒过来的地图，自信地说这是最新版的“猫界地理”。",
+            # "两只猫为了争一个晒太阳的好位置，竟然决定用“摇尾巴比赛”来决胜负。",
+            # "小黑白举起爪子，庄严宣布自己愿意分享领地，但只限于“美食区”。",
+            # "橘色小猫声称自己的祖先是“猫派大将军”，领地自然是“遗产”。",
+            # "辩论结束时，两只猫决定合开一家“喵星人快乐俱乐部”，共同管理这块“争议领地”。",
+            # "最后，两只猫咪并肩而行，一边走一边计划如何把这场辩论写成一个“爆笑的剧本”。",
+            
+            
+            # "The black and white cat stood in the middle of the road and claimed to be the 'guardian of the zebra crossing', while the orange cat shrugged and said it was a 'guide dog' crossing the road.",
+            # "Little Black and White proudly announced that it would open a 'cat cafe' in the orange cat's 'territory'. The orange cat responded that it likes to have fun in competition.",
+            # "The orange kitten calls himself the 'territory planner' and directs a group of little pigeons to redefine the airspace in the sky.",
+            # "Little Black and White proposed a 'meow-style debate', claiming that he would use the sharpest logic to 'defeat' the opponent.",
+            # "The orange kitten pretended to be a scholar, but he held an upside-down map and confidently said that it was the latest version of 'Cat World Geography.'",
+            # "In order to compete for a good spot to bask in the sun, two cats decided to have a 'tail wagging contest' to decide the winner.",
+            # "Little Black and White raised his paws and solemnly declared that he was willing to share the territory, but only in the 'food area'.",
+            # "The orange kitten claims that his ancestor is the 'Cat Faction General', and his territory is naturally his 'heritage'.",
+            # "At the end of the debate, the two cats decided to open a 'Cat Happy Club' to jointly manage this 'controversial territory.'",
+            # "In the end, the two cats walked side by side, planning how to turn this debate into a 'hilarious script'.",
+
+
+              # 'Yellow and black tropical fish dart through the sea.',
+              # 'An epic tornado attacking above aglowing city at night.',
+              # 'Slow pan upward of blazing oak fire in an indoor fireplace.',
+              # 'a cat wearing sunglasses and working as a lifeguard at pool.',
+              # 'Sunset over the sea.',
+              # 'A dog in astronaut suit and sunglasses floating in space.',
+              
+              
+            # "一只红色的鱼在珊瑚礁中游弋，穿梭于五颜六色的鱼群之间。",
+            # "一只绿色的鱼从远处游过来，与红色的鱼相遇。",
+            # "两条鱼开始嬉戏，互相追逐，在海水中翻滚。",
+            # "一群游客乘坐着观光潜艇从上方经过，看到了嬉戏的鱼。",
+            # "游客们被鱼儿们吸引，纷纷拿出手机拍照录像。",
+            # "一位游客脸上洋溢着兴奋的笑容，近距离观察着鱼儿们。",
+            # "夕阳的余晖照亮了海底，红色的鱼和绿色的鱼依然在嬉戏，它们的欢快身影在海水中留下一道美丽的剪影。",
+            # "观光潜艇缓缓离去，游客们意犹未尽地挥手告别。",
+            # "海底世界恢复了平静，只剩下珊瑚礁和鱼儿们在海中静静地摇摆.",
+            # "众人欢呼，字幕：'海底世界，充满了无尽的欢乐和美妙。'",
+            
+            
+           # "A red fish swims among the colorful fish in the coral reef.",
+           # "A green fish swam from a distance and met the red fish.",
+           # "The two fish started playing, chasing each other and rolling in the water.",
+           # "A group of tourists passed by on a sightseeing submarine and saw the fish playing.",
+           # "The tourists were attracted by the fish and took out their mobile phones to take photos and videos.",
+           # "A tourist looked at the fish up close with an excited smile on his face.",
+           # "The afterglow of the setting sun illuminates the bottom of the sea. Red fish and green fish are still playing, and their cheerful figures leave a beautiful silhouette in the sea water.",
+           # "The sightseeing submarine slowly left, and the tourists waved goodbye without saying goodbye.",
+           # "The underwater world has returned to calm, with only the coral reefs and fish swaying quietly in the sea.",
+           # "Everyone cheered, subtitles:The underwater world is full of endless joy and beauty.",
+           
+           
+            # 一条鲜红的鱼优雅地游过,它的鳞片在水中闪闪发光。
+            # 从另一边,一条翠绿的鱼也加入进来,在水中自在地游动着。
+            # 第三条金黄色的鱼出现了,它的身体在阳光下熠熠生辉。
+            # 最后,一条漆黑的鱼也悠闲地游了过来,加入了这个多彩的鱼群。
+            # 红绿黄黑各种鱼在水中嬉戏玩耍,互相追逐,场面十分热闹有趣。
+            # 这时,一大群游客来到了水族馆,对面前的景象啧啧称奇。
+            # 游客们兴奋地拍照录像,捕捉这独一无二的场景。
+            # 突然，红色的那条鱼跳跃着，远远地向一名小女孩挥动鱼尾巴致意。
+            # 小女孩开心极了,向红色的小鱼挥手回应,两者有了一段有趣的互动。
+            # 整个水族馆里洋溢着快乐的氛围,游客和鱼儿共同创造了一个独特而难忘的时刻。
+            
+            
+            
+            # 'An elegant crimson fish swims by, its scales shimmering in the water.',
+            # 'From the other side, an emerald green fish also joins in, gliding freely in the water.',
+            # 'A third golden-yellow fish appears, its body glistening brilliantly in the sunlight.',
+            # 'Finally, a jet-black fish leisurely swims over, joining this colorful school of fish.',
+            # 'The red, green, yellow, and black fish frolic and play in the water, chasing each other in a lively and amusing scene.',
+            # 'At this moment, a large crowd of visitors arrives at the aquarium, marveling at the sight before them.',
+            # 'The visitors excitedly take photos and videos, capturing this one-of-a-kind scene.',
+            # 'Suddenly, the red fish jumped and waved its tail fin from afar in greeting to a little girl.',
+            # 'The little girl is delighted, waving back at the little red fish, and the two share an amusing interaction.',
+            # 'The entire aquarium is filled with a joyful atmosphere, as visitors and fish together create a unique and unforgettable moment.',
+            
+            
+            
+
+            # 阳光透过树叶的缝隙洒在波光粼粼的水面上，一条红色的鱼悠然游过，留下一串波纹。
+            # 一条绿色的鱼从水草丛中游出，随着它的动作，水草轻轻摇曳，阳光照射下显得格外生动。
+            # 随即，一条黄色的鱼从水底快速游过，其黄色鳞片在光线下闪耀着金黄色的光芒。
+            # 紧接着，一条神秘的黑色鱼悄无声息地出现，它的身影在水中忽隐忽现，仿佛守护着这片秘境。
+            # 红色、绿色、黄色和黑色的鱼开始环绕游动，它们似乎在进行一场优雅的水下舞蹈。
+            # 此时，一群游客看着五颜六色的鱼群，手持相机和手机，兴奋地记录下这难得一见的景象。
+            # 其中一名小女孩蹲下身子，伸手试图触摸正在水面嬉戏的鱼，脸上露出开心的笑容。
+            # 突然，红色的鱼跃出水面，好像在回应那位游客，空中完成一个优雅的弧线，又轻巧落回水中。
+            # 其他游客见状纷纷欢呼起来，有的还尝试模仿那位互动游客的动作，希望能引起鱼儿的注意。
+            # 整个湖面和观看的人群，从大地到天空，都是一片欢乐和谐的气氛。
+
+
+            
+            
+            "The sun shines through the gaps in the leaves on the sparkling water, and a red fish swims leisurely, leaving a string of ripples.",
+            "A green fish swam out from the aquatic plants. As it moved, the aquatic plants swayed gently, making it look particularly vivid under the sunlight.",
+            "Immediately, a yellow fish swam quickly from the bottom of the water, its yellow scales shining golden in the light.",
+            "Immediately afterwards, a mysterious black fish appeared quietly. Its figure flickered in and out of the water, as if guarding this secret place.",
+            "Red, green, yellow and black fish began to swim around in what seemed like an elegant underwater dance.",
+            "At this time, a group of tourists looked at the colorful fish, holding cameras and mobile phones, excitedly recording this rare sight.",
+            "One of the little girls squatted down and reached out to try to touch the fish playing in the water, with a happy smile on her face.",
+            "Suddenly, the red fish jumped out of the water, as if in response to the tourist, completed an elegant arc in the air, and then fell back into the water lightly.",
+            "Other tourists cheered when they saw this, and some even tried to imitate the actions of the interactive tourist, hoping to attract the attention of the fish.",
+            "The entire lake and the crowd watching, from the earth to the sky, are a joyful and harmonious atmosphere.",
+
+       
+              
+              ]

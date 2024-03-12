@@ -1,0 +1,6 @@
+timm
+einops
+omegaconf
+diffusers==0.24.0
+moviepy
+textwrap

@@ -1,0 +1,1 @@
+stage 1 | develop mode 0 | gender:female | score 10.000000 | retcode 0

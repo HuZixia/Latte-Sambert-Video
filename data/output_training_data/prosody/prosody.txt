@@ -1,0 +1,40 @@
+SSB00180012_S0000	我#1怎么#1会#1和你#1扯上#1关系#4
+	wo2 zen3 me5 hui4 he2 ni2 che3 shang4 guan1 xi5
+SSB00180288_S0000	我就#1帮你#1逃命#4
+	wo3 jiu4 bang1 ni3 tao2 ming4
+SSB00180277_S0000	我会#1万分#1谨慎的#4
+	wo3 hui4 wan4 fen1 jin3 shen4 de5
+SSB00180216_S0000	你#1真的#1不想#4
+	ni3 zhen1 de5 bu4 xiang3
+SSB00180218_S0000	一三#1六八一五七三八#1七四#4
+	yi1 san1 liu4 ba1 yi1 wu3 qi1 san1 ba1 qi1 si4
+SSB00180047_S0000	搜一搜#1游子吟#4
+	sou1 yi4 sou1 you2 zi3 yin2
+SSB00180279_S0000	花竹#1植物#1有#1什么#4
+	hua1 zhu2 zhi2 wu4 you3 shen2 me5
+SSB00180325_S0000	但是#1他#1肯定#1还#1参与了#1不少#1其他事#4
+	dan4 shi4 ta1 ken3 ding4 hai2 can1 yv4 le5 bu4 shao3 qi2 ta1 shi4
+SSB00180032_S0000	在#1圣诞节#1上映#4
+	zai4 sheng4 dan4 jie2 shang4 ying4
+SSB00180402_S0000	九坊#1威龙#4
+	jiu3 fang2 wei1 long2
+SSB00180500_S0000	那#1小女主#3真是#1太#1感谢#1你了#4
+	na4 xiao2 nv2 zhu3 zhen1 shi4 tai4 gan3 xie4 ni3 le5
+SSB00180357_S0000	诺基亚#1电器#1有#1什么#4
+	nuo4 ji1 ya4 dian4 qi4 you3 shen2 me5
+SSB00180415_S0000	一三#1零八七九四七#1八#1八三#4
+	yi1 san1 ling2 ba1 qi1 jiu3 si4 qi1 ba1 ba1 san1
+SSB00180249_S0000	没有#1具体#1数据#1只说#1一个#1总数#1是#1远远#1不够的#4
+	mei2 you3 jv4 ti3 shu4 jv4 zhi3 shuo1 yi2 ge5 zong3 shu4 shi4 yvan2 yvan3 bu2 gou4 de5
+SSB00180156_S0000	说一说#1我#1想要#1这样#1生活#4
+	shuo1 yi4 shuo1 wo2 xiang3 yao4 zhe4 yang4 sheng1 huo2
+SSB00180503_S0000	九华一画#4
+	jiu3 hua4 yi1 hua4
+SSB00180117_S0000	六十#1千克#1新人#1王之#1格栈#4
+	liu4 shi2 qian1 ke4 xin1 ren2 wang2 zhi1 ge2 zhan4
+SSB00180007_S0000	让#1大家#1快点#1下来#4
+	rang4 da4 jia1 kuai4 dian3 xia4 lai2
+SSB00180431_S0000	搜一搜#1生来#1彷徨#4
+	sou1 yi4 sou1 sheng1 lai2 pang2 huang2
+SSB00180138_S0000	带点#1蛋糕#1或者#1点心#1回来#4
+	dai4 dian3 dan4 gao1 huo4 zhe2 dian3 xin5 hui2 lai2
