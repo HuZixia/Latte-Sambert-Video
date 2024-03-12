@@ -218,6 +218,7 @@ def merge_video(video_dir, audio_dir, output, text_sentences, font='./asserts/Si
     final_clips = []
     i = 0
     chars_per_line = 20
+
     for video_file, audio_file in zip(video_files, audio_files):
         video_clip = VideoFileClip(video_file)
         audio_clip = AudioFileClip(audio_file)
@@ -227,13 +228,16 @@ def merge_video(video_dir, audio_dir, output, text_sentences, font='./asserts/Si
         txt_clip = TextClip(wrapped_text, fontsize=14, color='white', font=font)
         txt_clip = txt_clip.set_position(('center', 'bottom')).set_duration(audio_clip.duration)
         i += 1
+
         if video_duration < audio_duration:
             n_loops = audio_duration  # video_duration + 1
             video_clip = video_clip.loop(n=n_loops)
             video_clip = video_clip.subclip(0, audio_duration)
+
         video_clip = video_clip.set_audio(audio_clip)
         video_clip = CompositeVideoClip([video_clip, txt_clip])
         final_clips.append(video_clip)
+        
     final_video = concatenate_videoclips(final_clips)
     print(output)
     final_video.write_videofile(output, codec='libx264', audio_codec='aac')
