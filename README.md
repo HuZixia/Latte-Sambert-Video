@@ -12,7 +12,7 @@
 
 ## 2. 效果展示
 
-视频结果在目录 `data/result` 下，以下是一个例子。
+视频结果在目录 `data/result` ，以下是一个例子。
 
 https://github.com/HuZixia/Latte-Sambert-Video/assets/38995480/6373543d-33c9-4c9e-a9ad-a3ec49daed61
 
@@ -257,5 +257,13 @@ def merge_video(video_dir, audio_dir, output, text_sentences, font='./asserts/Si
 欢迎关注微信公众号，学习交流 🤓
 
 <img src="./asserts/AI Freedom.jpg" style="margin-left: 0px">
+
+
+
+## 5. 协议 & 严禁
+
+本仓库代码依照 Apache-2.0 协议开源。
+
+未经许可，严禁商用。
 
 
