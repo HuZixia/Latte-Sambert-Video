@@ -5,7 +5,7 @@
 
 **这是一个文本转视频的项目，通过输入文本，生成对应的视频。**
 
-- 文字生成视频，Latte，详见 latte_video.ipynb
+- 文字生成动态视频，Latte，详见 latte_video.ipynb
 - 文字生成个性化语音，Sambert，详见 sambert_audio.ipynb
 - 视频和语音合成，带有字幕 ，详见 merge_video.ipynb
 
@@ -14,21 +14,14 @@
 
 视频结果在目录 `data/result` 下，以下是一个例子。
 
-https://v.qq.com/x/page/b35425m2cb1.html
-
-https://v.qq.com/x/page/q3542cbxmkt.html
-
-
-
-https://www.zhihu.com/zvideo/1746593924586672128
-
+https://github.com/HuZixia/Latte-Sambert-Video/assets/38995480/6373543d-33c9-4c9e-a9ad-a3ec49daed61
 
 
 ## 3. 核心流程
 
 **详见 main.py**
 
-### 3.1 文字生成视频，Latte，详见 latte_video.ipynb
+### 3.1 文字生成动态视频，Latte，详见 latte_video.ipynb
 
 **GPU资源：GPU环境，8核 32GB 显存24G，ubuntu22.4-cuda12.1.0-py310-torch2.1.2-tf2.14.0-1.12.0**
 

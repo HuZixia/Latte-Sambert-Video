@@ -6,7 +6,7 @@
 # @知乎       : RedHerring
 
 
-# 一. 由文字生成视频，Latte，详见 latte_video.ipynb
+# 一. 由文字生成动态视频，Latte，详见 latte_video.ipynb
 
 # 1. 安装依赖
 # !pip install timm
